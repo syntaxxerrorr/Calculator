@@ -249,7 +249,7 @@
 
     {
         
-    Screen.text = [NSString stringWithFormat:@"%d", RunningTotal];
+    Screen.text = [NSString stringWithFormat:@"%d", RunningTotalint];
         
     }
     
