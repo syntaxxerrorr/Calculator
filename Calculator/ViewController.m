@@ -236,11 +236,32 @@
     }
     Method = 0;
     SelectNumber = 0;
-    Screen.text = [NSString stringWithFormat:@"%.1f", RunningTotal];
 
+    float convertRT;
+    
+    int RunningTotalint;
+    
+    convertRT = truncf(RunningTotal);
+    
+    RunningTotalint = (int)convertRT;
+    
+    if(RunningTotal == convertRT)
+
+    {
+        
+    Screen.text = [NSString stringWithFormat:@"%d", RunningTotal];
+        
+    }
+    
+
+    else
+    {
+         Screen.text = [NSString stringWithFormat:@"%.1f", RunningTotal];
+    }
     
     
 }
+
 -(IBAction)AllClear:(id)sender{
     Method = 0;
     RunningTotal = 0;

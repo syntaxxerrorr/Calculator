@@ -11,7 +11,7 @@
 
 int Method;
 int SelectNumber;
-float RunningTotal;
+double RunningTotal;
 
 @interface ViewController : UIViewController
 {
